@@ -8,7 +8,7 @@ guess = None
 print("--------------Welcome to the guessing game!--------------")
 print()
 print("Here you are going to pick a number between 1 and 100")
-print
+print()
 
 while guess != Secret_num:
     try:

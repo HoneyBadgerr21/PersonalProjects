@@ -17,7 +17,7 @@ while guess != Secret_num:
             print("Sorry your number is to low")
         elif guess > Secret_num:
             print("Sorry your number is to high")
-        elif guess == Secret_num:
+        else:
             print("You guessed the correct number!")
     except ValueError:
         print("Invalid Input")

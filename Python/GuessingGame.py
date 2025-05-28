@@ -21,3 +21,21 @@ while guess != Secret_num:
             print("You guessed the correct number!")
     except ValueError:
         print("Invalid Input")
+
+#things i want to add 
+#Bonus Features to Add (as you go)
+
+    #Guess Limit
+    #Add a maximum number of guesses before the game ends.
+
+    #Difficulty Levels
+    #Let players choose Easy (1–10), Medium (1–50), Hard (1–100).
+
+    #Play Again Option
+    #Ask the user if they want to play again after finishing.
+
+    #Score Tracker or High Score
+    #Save the best score across rounds (in memory or a file).
+
+    #Hints
+    #Add warmer/colder hints if they're getting closer.

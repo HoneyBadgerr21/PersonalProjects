@@ -3,6 +3,7 @@ import random
 #create the random number 
 Secret_num = random.randint(1,100)
 tries = 0
+max_tries = 5
 guess = None
 
 print("--------------Welcome to the guessing game!--------------")
@@ -10,15 +11,20 @@ print()
 print("Here you are going to pick a number between 1 and 100")
 print()
 
-while guess != Secret_num:
+while tries < max_tries:
     try:
         guess = int(input("Guess a number!: "))
+        tries += 1
+
         if guess < Secret_num:
-            print("Sorry your number is to low")
+            print(f"Sorry your number is to low. This is attempt number {tries}.")
         elif guess > Secret_num:
-            print("Sorry your number is to high")
+            print(f"Sorry your number is to high. This is attempt number {tries}.")
         else:
             print("You guessed the correct number!")
+        
+        if tries == max_tries and guess != Secret_num:
+            print(f"Sorry out of tries! The correct answer was {Secret_num}. ")
     except ValueError:
         print("Invalid Input")
 
